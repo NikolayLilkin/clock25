@@ -98,25 +98,25 @@ class App extends Component{
             <div className="col-3">
               <h5>Break Length</h5>
               <div className='d-flex flex-row justify-content-center'>
-                  <a href="#" onClick={this.increaseBreak}>
+                  <button onClick={this.increaseBreak}>
                     <i className='bi bi-arrow-up'></i>
-                  </a>
+                  </button>
                   <p style={{paddingLeft:5, paddingRight:5}}>{this.state.break}</p>
-                  <a href="#" onClick={this.decreaseBreak}>
+                  <button onClick={this.decreaseBreak}>
                     <i className="bi bi-arrow-down"></i>
-                  </a>
+                  </button>
               </div>
             </div>
             <div className="col-3">
               <h5>Session Length</h5>
               <div className='d-flex flex-row justify-content-center'>
-                  <a href="#" onClick={this.increaseSession}>
+                  <button onClick={this.increaseSession}>
                     <i className='bi bi-arrow-up'></i>
-                  </a>
+                  </button>
                   <p style={{paddingLeft:5, paddingRight:5}}>{this.state.session}</p>
-                  <a href="#" onClick={this.decreaseSession}>
+                  <button onClick={this.decreaseSession}>
                     <i className="bi bi-arrow-down"></i>
-                  </a>
+                  </button>
               </div>
             </div>
           </div>
@@ -127,12 +127,12 @@ class App extends Component{
             </div>
           </div>
           <div className='justify-content-center text-center'>
-            <a href="#" onClick={this.start}>
+            <button onClick={this.start}>
               <i className="bi bi-play"></i>
-            </a>
-            <a href="#" onClick={this.pause}>
+            </button>
+            <button onClick={this.pause}>
               <i className="bi bi-pause"></i>
-            </a>
+            </button>
           </div>
         </div> 
       </div>
